@@ -1,0 +1,20 @@
+{
+  "name": "login-register-by-nodejs",
+  "version": "1.0.0",
+  "description": "Login and Register Api Port Hosting by NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon index.js",
+    "start:prod": "set node_env=production && nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hlaing Oo Maw",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3",
+    "morgan": "^1.10.0"
+  }
+}
