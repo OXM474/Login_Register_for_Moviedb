@@ -17,7 +17,7 @@ if (process.env.node_env === "development") {
   app.use(morgan("dev"));
 }
 mongoose
-  .connect(process.env.mongo_url)
+  .connect(process.env.mongo_url.replace("<password>", process.env.password))
   .then(() => {
     console.log("Connected to MongoDB!");
   })
